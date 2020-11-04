@@ -1,40 +1,92 @@
+
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<title>Kõige parem leht</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Picture!</title>
 </head>
-<body background="data:image/jpeg;base64,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">
-<a href="https://www.taltech.ee/"> kebab </a>
-  206606IADB
-<h1>Mulle maitseb kebab!</h1>
-  <h2>Kebab</h2>
-  <h3>Kebab</h3>
-  <h4>Kebab</h4>
-  <h5>Kebab</h5>
-  <h6>Kebab</h6>
-  <table border="10">
-    <tr>
-      <th>Pita kebab</th>
-      <th>Lavash kebab</th>
-      <th>Iskander kebab</th>
-    </tr>
-    <tr>
-      <td>parim</td>
-      <td>norm</td>
-      <td>suht halb</td>
-    </tr>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <p>kebab on hea</p>
-  <img src="https://static1.visitestonia.com/images/3319541/kebab-pizza-tartu-visitestonia_.jpg">
+<body>
+
+<canvas id="my_canvas" width="700" height="600"></canvas>
+
+<script>
+// https://progur.com/2016/10/procedural-generation-create-fractal-trees-javascript.html
+
+var myCanvas = document.getElementById("my_canvas");
+var ctx = myCanvas.getContext("2d");
+
+function draw(startX, startY, len, angle) {
+  ctx.beginPath();
+  ctx.save();
+  
+  ctx.translate(startX, startY);
+  ctx.rotate(angle * (Math.PI/180));
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, -len);
+  ctx.stroke();
+  
+  if(len < 10) {
+    ctx.restore();
+    return;
+  }
+  
+  draw(0, -len, len*0.2, -15);
+  draw(0, -len, len*0.8, 15);
+  
+  ctx.restore();
+}
+
+draw(350,600,120,0);
+
+
+/*
+
+
+// https://progur.com/2016/10/procedural-generation-create-koch-curve-javascript.html
+
+function generateSequence() {
+    var sequence = "0";
+    for(var i=0; i < 20; i++) {
+        var parts = sequence.split("");
+        var complement = "";
+        for(var j=0; j<parts.length; j++) {
+            complement = complement + 
+                      (parts[j] == "0" ? "1" : "0");
+        }
+        sequence += complement;
+    }
+    return sequence;
+}
+
+function draw() {
+  var sequence = generateSequence();
+  var parts = sequence.split("");
+  ctx.translate(0, myCanvas.height);
+  ctx.beginPath();
+  ctx.moveTo(0,0);
+  for(var i = 0; i < parts.length; i++) {
+    if(parts[i] == "0") {
+        ctx.translate(0,0.1);
+        ctx.lineTo(0,0.1);            
+    } else {
+        ctx.rotate(Math.PI/3);
+    }
+  }
+  ctx.stroke();
+}
+
+draw();
+*/
+
+/*
+
+https://progur.com/2017/02/create-mandelbrot-fractal-javascript.html
+
+https://stackoverflow.com/questions/49785734/animating-a-fractal-tree-inside-a-javascript-canvas
+
+*/
+
+</script>
+
 </body>
 </html>
