@@ -5,15 +5,6 @@ body {
   color: #616971;
 }
 
-
-
-
-/*============= NAVIGATION =============*/
-
-.navbar-brand img {
-  height: 4rem;
-}
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -30,44 +21,54 @@ body {
 }
 
 .nav-link {
-  color: #5b5555!important;
+  color: black!important;
 }
 
-.nav-link.active,
 .nav-link:hover {
-  color: #4981b3!important;
+  color: gray!important;
 }
-/*============= CAROUSEL =============*/
-
-
-
-/*---Change Carousel Transition Speed --*/
-
-
-/*-- Carousel Content --*/
-
-
-
-/*===== FIXED BACKGROUND IMG =====*/
 
 .fixed-background {
-  overflow: hidden; /*-- Correction for iOS --*/
+  overflow: hidden; 
 }
 
+footer {
+  background-color: #383838;
+  padding: 1rem 2rem 3rem;
+}
 
-/*-- Emoji Navbar --*/
+footer p, footer a,
+.socket a {
+  color: white;
+  text-decoration: none;
+}
 
+ul.social {
+  list-style-type: none;
+  display: flex;
+}
 
+ul.social li {
+  margin: 0 auto;
+}
 
-/*============= FOOTER =============*/
+.socket {
+  background-color: #222222;
+}
 
+#carousel {
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
 
+.carousel-inner {
+  max-height: 38rem!important;
+}
 
-/*============= SOCKET =============*/
-
-
-
-/*============= MEDIA QUERIES =============*/
+.carousel-item.next,
+.carousel-item.prev,
+.carousel-item.active {
+  transition: transform 1.2s ease;
+}
 
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
@@ -78,25 +79,6 @@ body {
 
 }
 
-
-/*============ BOOTSTRAP BREAK POINTS:
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
 
 /*-- Bootstrap Mobile Gutter Fix --*/
 .row, .container-fluid {
