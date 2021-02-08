@@ -32,9 +32,52 @@ body {
   overflow: hidden; 
 }
 
+
+
+#carousel {
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner {
+  max-height: 50rem!important;
+}
+
+.carousel-item.next,
+.carousel-item.prev,
+.carousel-item.active {
+  transition: transform 1.2s ease;
+}
+
+.contact-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+}
+
+form {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 400px;
+  display: flex;
+  background: transparent;
+  margin-bottom: .15rem;
+}
+
+form .submit {
+  background:#383838;
+  border-color: #383838;
+  color:white;
+  font-weight: bold;
+}
+
 footer {
   background-color: #383838;
   padding: 1rem 2rem 3rem;
+  margin-top: 5rem;
 }
 
 footer p, footer a,
@@ -54,20 +97,6 @@ ul.social li {
 
 .socket {
   background-color: #222222;
-}
-
-#carousel {
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
-}
-
-.carousel-inner {
-  max-height: 38rem!important;
-}
-
-.carousel-item.next,
-.carousel-item.prev,
-.carousel-item.active {
-  transition: transform 1.2s ease;
 }
 
 /* Devices under 1199px (xl) */
