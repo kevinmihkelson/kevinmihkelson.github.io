@@ -22,7 +22,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link active" href="index.html">Avaleht</a>
+					<a class="nav-link active" href="#">Avaleht</a>
 				</li>
 				
 				<li class="nav-item dropdown">
@@ -56,7 +56,7 @@
 				<h2 class="text-dark font-weight-bold mb-3">Katuste puhastamine lumest</h2>
 				<p class="mb-4">Lume eemaldamine lame ja viilkatustelt.
 					Jääpurikate eemaldamine katuse räästalt.
-					Tööstus ja laohoonete katuaepuhastus.</p>
+					Tööstus ja laohoonete katusepuhastus.</p>
 					<li class="price-item">Viilkatusel 1tk alpinist 20eur/h+km.</li>
 					<br>
 					<li class="price-item">Lamekatusel 1tk alpinist 16eur/h+km.</li>
@@ -68,7 +68,7 @@
 		
 	</div>
 	
-	<div class="Firmast" id="about">
+	<div class="firma" id="about">
         <div class="col-12 text-center mt-5">
 		    <h1 class="text-dark pt4">Firmast</h1>
 		        <div class="border-top border-secondary w-25 mx-auto my-3">
@@ -79,10 +79,12 @@
 	    </div>
     </div >
 
-	<div id="pics" class="col-12 text-left mt-5">
-		<h1 class="text-dark pt4">Tehtud Tööd</h1>
-		<div id="tood1" class="border-top border-secondary w-25 mx-left my-3"></div>
-	</div>
+	<div class="pic" id="pics">
+	    <div class="col-12 text-left mt-5">
+		    <h1 class="text-dark pt4">Tehtud Tööd</h1>
+		    <div id="tood1" class="border-top border-secondary w-25 mx-left my-3"></div>
+	    </div>
+    </div>
 	<div class="container my-4">
 	</div>
 
@@ -104,7 +106,8 @@
 		</div>
 	</div>
 
-	<div class="container my-5" id="contact">
+	<div class="con" id="contact">
+	<div class="container my-5">
 		<div class="row py-4">
 	        <div class="col-lg-7 mb-7 my-lg-auto text-left mt-5">
 		        <h1 class="text-dark pt4">Kontakt</h1>
@@ -147,6 +150,7 @@
 		    </div>
 		</div>
 	</div>
+    </div>
 
     <footer>
 	    <div class="container">
@@ -154,12 +158,12 @@
 			    <div class="col-sm-10 col-md8 col-lg-6">
 			    <h2>Jaga Infot</h2>
 			    <ul class="social pt-3">
-				    <li><a href="http://www.facebook.com/sharer.php?u=http://www.facebook.com" target="_blank">
+				    <li><a href="http://www.facebook.com/sharer.php?u=http://www.visorek.ee" target="_blank">
 					    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-				    </a></li><li><a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+				    </a></li><li><a href="https://twitter.com/share?url=https:/visorek.ee" target="_blank">
 					    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
 				    </a></li>
-				    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+				    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://visorek.ee" target="_blank">
 					    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
 				    </a></li>
 			    </ul>
@@ -178,5 +182,12 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+	</script>
 </body>
 </html>

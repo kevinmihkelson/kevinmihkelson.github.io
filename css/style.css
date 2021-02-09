@@ -17,6 +17,33 @@ body {
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
 }
 
+.firma::before {
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.pic::before {
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.con::before {
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 .nav-item {
   align-self: left;
   padding: .5rem;
@@ -39,7 +66,7 @@ body {
 }
 
 .carousel-inner {
-  max-height: 50rem!important;
+  max-height: 40rem!important;
 }
 
 .carousel-item.next,
