@@ -55,9 +55,9 @@ $(function () {
                         .append("</button>");
                     $("#success > .alert-danger").append(
                         $("<strong>").text(
-                            "Sorry " +
+                            "Vabandust " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                                ", kahjuks emaili server on maas. Proovige hiljem uuesti!"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
