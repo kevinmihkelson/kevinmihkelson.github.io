@@ -2436,32 +2436,12 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: red;
-  border-color: black;
+  background-color: #DD4050;
   margin-left: 45px;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #000;
-  border-color:white;
-}
-.btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #000;
-  border-color:white;
-}
-.btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #000;
-  border-color:white;
-}
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #000;
-  border-color:white;
-}
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 95, 84, 0.5);
+  background-color: #E77480 ;
 }
 
 .btn-secondary {
@@ -9921,12 +9901,12 @@ p {
   }
 }
 ::-moz-selection {
-  background: #fe3636;
+  background: #DD4050;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fe3636;
+  background: #DD4050;
   text-shadow: none;
 }
 
@@ -9992,12 +9972,12 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: red;
+  color: #DD4050;
   transition: ease-in 0.3s;
 }
 #mainNav .dropbtn:hover {
   transition: ease-in 0.3s;
-  color: red;
+  color: #DD4050;
 }
 
 @media (min-width: 992px) {
@@ -10061,6 +10041,28 @@ header.masthead .masthead-heading {
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+@media (max-width:768px)  {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  .btn-primary {
+    margin-bottom: 1rem;
+
+  }
+}
 
 @media (min-width: 768px) {
   header.masthead {
@@ -10109,7 +10111,7 @@ section#contact form#contactForm p.help-block {
   margin: 0;
 }
 section#contact form#contactForm .form-control:focus {
-  border-color: red;
+  border-color: #DD4050;
   box-shadow: none;
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
@@ -10139,54 +10141,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: rgb(78, 78, 78);
-}
-/* Dropdown Button */
-
-.dropbtn {
-  background-color: transparent;
-  color: black;
-  padding-top: 0.5rem;
-  padding-left: 0rem;
-  padding-bottom: 0.5rem;
-  border: none;
-  text-transform: uppercase;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
-  font-weight: bold;
-  color: black;
-  letter-spacing: 0.0625em;
-  
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+  margin-bottom: 0;
   position: relative;
-  display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
+#contact2 {
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  background-color: white;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: transparent;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: transparent;}
