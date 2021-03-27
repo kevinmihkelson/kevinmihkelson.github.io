@@ -26,17 +26,74 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Avaleht</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="kipsivalu.html">Kipsivalu</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="betoonpõrandad.html">Betoonpõrandad</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="kontakt-html">Kontakt</a></li>
+                        <li class="current"><a class="nav-link js-scroll-trigger" href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="page-section" id="contact2">
+        <section id="mainCont">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Kontakt</h2>
-                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-                </div>
+                <div class="contactinfo">
+                <h2>Kontakt</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="/assets/logos/location.png" alt=""></span>
+                        <span>Roheline tn 18, Pärnu, Pärnumaa 80037</span>
+                    </li>
+                    <li>
+                        <span><img src="/assets/logos/email.png" alt=""></span>
+                        <span>Rambetoon@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><img src="/assets/logos/phone.png" alt=""></span>
+                        <span>5035155</span>
+                    </li>
+                    <li>
+                        <span><img src="/assets/logos/phone.png" alt=""></span>
+                        <span>5533803</span>
+                    </li>
+                    <li>
+                        <span><img src="/assets/logos/phone.png" alt=""></span>
+                        <span>5183067</span>
+                    </li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"><img src="assets/logos/fb.png"></a></li>
+                    <li><a href="#"><img src="assets/logos/twitter.png"></a></li>
+                    <li><a href="#"><img src="assets/logos/linkedin.png"></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Võta ühendust!</h2>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Teie Nimi *" required="required" data-validation-required-message="Palun sisestage nimi." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Teie Email *" required="required" data-validation-required-message="Palun sisestage email." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Teie Telefon *" required="required" data-validation-required-message="Palun sisestage oma telefon." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Teie Sõnum *" required="required" data-validation-required-message="Palun sisestage sõnum."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Saada</button>
+                    </div>
+                </form>
+            </div>            
             </div>
         </section>
         <footer class="footer py-4">
