@@ -10222,7 +10222,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin: auto;
   text-align: center;
   padding-top: 100px;
-  background-image:image() ;
 }
 .carousel-inner{
   width: 100%;
@@ -10323,8 +10322,8 @@ section#contact2 form#contact2Form :-ms-input-placeholder {
 }
 
 .xd {
-  background: white;
-  min-height: 100vh;
+  background-image: url(/assets/img/polished-concrete-floors-winnipeg2.jpg);
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10340,10 +10339,11 @@ section#contact2 form#contact2Form :-ms-input-placeholder {
 }
 
 .xd .contact-info .card {
-  background: gray;
+  background: rgb(168, 167, 167);
   padding: 0 20px;
   margin: 0 10px;
   width: calc(33% - 20px);
+  border: none;
   height: 250px;
   display: flex;
   flex-direction: column;
