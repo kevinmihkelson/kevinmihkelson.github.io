@@ -31,58 +31,72 @@
                 </div>
             </div>
         </nav>
-        <section class="xd">
-                <div class="contact-info">
-                <div class="card">
-                    <i class="card-icon far fa-envelope"></i>
-                    <p>rambetoon@gmail.com</p>
-                </div>
-                <div class="card">
-                    <i class="card-icon fas fa-phone"></i>
-                    <p>5035155</p>
-                    <p>5533803</p>
-                    <p>5183067</p>
-                </div>
-                <div class="card">
-                    <i class="card-icon fas fa-map-marker-alt"></i>
-                    <p>Roheline tn 18, Pärnu, Pärnumaa 80037,</p>
-                </div>
-        </section>
-        <section class="page-section" id="contact2">
-                <div class="container"> 
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Võta Ühendust!</h2>
+        <section id="contactpage">
+            <div class="container">
+                <div class="form">
+                    <div class="contact-info">
+                        <h3>KONTAKT</h3>
+                        <div class="info">
+                            <div class="information">
+                                <img src="/assets/logos/location.png" class="icon" alt="">
+                                <p>Roheline tn 18, Pärnu, Pärnumaa 80037</p>
+                            </div>
+                            <div class="information">
+                                <img src="/assets/logos/email.png" class="icon" alt="">
+                                <p>rambetoon@gmail.com</p>
+                            </div>
+                            <div class="information">
+                                <img src="/assets/logos/phone.png" class="icon" alt="">
+                                <p>5035155, 5533803, 5183067</p>
+                            </div>
+                            <div class="social-media">
+                                <h3>Jaga infot!</h3>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <form id="contact2Form" name="sentMessage" novalidate="novalidate">
-                        <div class="row align-items-stretch mb-5">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" type="text" placeholder="Teie Nimi *" required="required" data-validation-required-message="Palun sisestage nimi." />
-                                    <p class="help-block text-danger"></p>
-                               </div>
-                                <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Teie Email *" required="required" data-validation-required-message="Palun sisestage email." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group mb-md-0">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Teie Telefon *" required="required" data-validation-required-message="Palun sisestage oma telefon." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                    <div class="contact-form">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+                        <form action="index.html">
+                            <h3 class="title">VÕTA ÜHENDUST!</h3>
+                            <div class="input-container">
+                                <input type="text" name="name" class="input">
+                                <label for="">Nimi</label>
+                                <span>Nimi</span>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-group-textarea mb-md-0">
-                                    <textarea class="form-control" id="message" placeholder="Teie Sõnum *" required="required" data-validation-required-message="Palun sisestage sõnum."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                            <div class="input-container">
+                                <input type="email" name="email" class="input">
+                                <label for="">Email</label>
+                                <span>Email</span>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <div id="success"></div>
+                            <div class="input-container">
+                                <input type="tel" name="phone" class="input">
+                                <label for="">Telefon</label>
+                                <span>Telefon</span>
+                            </div>
+                            <div class="input-container textarea">
+                                <textarea name="message" class="input"></textarea>
+                                <label for="">Sõnum</label>
+                                <span>Sõnum</span>
+                            </div>
                             <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Saada</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
+        
         <footer class="footer py-4">
             <div class="container">
                 <h9>RAM Betoon OÜ (c) 2021 Roheline tn 18, Pärnu, Pärnumaa 80037</h9>
@@ -95,5 +109,6 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
