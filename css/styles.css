@@ -9939,6 +9939,17 @@ img::-moz-selection {
   border-radius: 100%;
 }
 
+
+#mainNav.navbar-shrink .navbar-brand img{
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+#mainNav .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
 #mainNav,
 #mainNav2 {
   padding-top: 1rem;
@@ -9956,6 +9967,12 @@ img::-moz-selection {
   background-color: black;
   border: 0;
 }
+#mainNav2 .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+#mainNav2.navbar-nav.nav-item:last-child{
+  margin-right: 0;
+}
 #mainNav .navbar-brand,
 #mainNav2 .navbar-brand {
   color: #DD4050;
@@ -9964,9 +9981,12 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
-#mainNav .navbar-brand img,
-#mainNav2 .navbar-brand img{
+#mainNav .navbar-brand img{
   height: 2rem;
+}
+
+#mainNav2 .navbar-brand img {
+  height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link,
 #mainNav2 .navbar-nav .nav-item .nav-link {
@@ -10074,7 +10094,7 @@ img::-moz-selection {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
+#mainNav.navbar-shrink .navbar-brand img{
     height: 1.5rem;
   }
   #mainNav .navbar-nav .nav-item {
@@ -10084,12 +10104,68 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+
+header.masthead2 {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.527),rgba(107, 107, 107, 0.5)) , url(/assets/img/kips_tehtud_tood/aaaa.jpg);
+  text-align: center;
+  color: var(--gray-dark);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead2 .btn-primary {
+  margin-left: -1rem;
+}
+
+header.masthead2 .heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  color: var(--gray-dark);
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media (max-width:768px) {
+}
+header.masthead2 {
+  padding-top: 17rem;
+  padding-bottom: 12.5rem;
+}
+header.masthead2 .heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  margin-bottom: 1rem;
+
+}
+
+@media (min-width: 768px) {
+  header.masthead2 {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead2 .heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-align: c;
+    margin-bottom: 2rem;
+  }
+}
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: var(--gray-dark);
-  background-image: url("/assets/img/polished-concrete-floors-winnipeg.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.527),rgba(107, 107, 107, 0.5)), url("/assets/img/polished-concrete-floors-winnipeg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10223,6 +10299,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   padding-top: 100px;
 }
+
+.lol{
+  background-image: url(/assets/img/kips_tehtud_tood/aaaa.jpg);
+}
+
 .carousel-inner{
   width: 100%;
   height: auto;
@@ -10232,8 +10313,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 80%;
   margin: auto;
   text-align: left;
-  padding-top: 10px;
 }
+
 .kipsxd {
   text-align: center;
   padding-bottom: 50px;
@@ -10559,5 +10640,71 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   #contactpage .contact-info::before {
     display: none;
+  }
+}
+
+.kips2 {
+  margin-top: -10rem;
+}
+
+.kips2 h1 {
+  padding-bottom: 1rem;
+}
+
+.pros {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.pros h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+  margin-top: 40px;
+}
+
+.cen {
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.info {
+  display: inline-block;
+  vertical-align:top;
+  width: calc(100% / 4);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.info:hover {
+  background-color: #ddd;
+}
+
+.info img {
+  float: center;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cen h5 {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .info {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .info {
+    width: 100%;
   }
 }
