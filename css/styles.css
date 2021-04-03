@@ -10671,7 +10671,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 20px;
 }
 
-.info {
+.info1 {
   display: inline-block;
   vertical-align:top;
   width: calc(100% / 4);
@@ -10682,11 +10682,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   cursor: pointer;
 }
 
-.info:hover {
+.info1:hover {
   background-color: #ddd;
 }
 
-.info img {
+.info1 img {
   float: center;
   width: 100px;
   height: 100px;
@@ -10698,13 +10698,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 @media screen and (max-width: 1400px) {
-  .info {
+  .info1 {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .info {
+  .info1 {
     width: 100%;
   }
 }
