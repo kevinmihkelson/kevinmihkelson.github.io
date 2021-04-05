@@ -2421,7 +2421,6 @@ textarea.form-control {
 }
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2442,36 +2441,6 @@ fieldset:disabled a.btn {
 .btn-primary:hover {
   color: #fff;
   background-color: #E77480 ;
-}
-
-.btn-secondary {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-.btn-secondary:hover {
-  color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
-}
-.btn-secondary:focus, .btn-secondary.focus {
-  color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
-  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
-}
-.btn-secondary.disabled, .btn-secondary:disabled {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #545b62;
-  border-color: #4e555b;
-}
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
 .btn-success {
@@ -10001,11 +9970,6 @@ img::-moz-selection {
   color: #DD4050;
   transition: ease-in 0.3s;
 }
-#mainNav .dropbtn:hover,
-#mainNav2 .dropbtn:hover {
-  transition: ease-in 0.3s;
-  color: #DD4050;
-}
 
 @media (max-width:768px) {
   #mainNav, #mainNav2 {
@@ -10136,9 +10100,9 @@ header.masthead2 {
   padding-bottom: 12.5rem;
 }
 header.masthead2 .heading {
-  font-size: 4.5rem;
+  font-size: 3.25rem;
   font-weight: 700;
-  line-height: 4.5rem;
+  line-height: 3.25rem;
   margin-bottom: 2rem;
 }
 .btn-primary {
@@ -10152,10 +10116,10 @@ header.masthead2 .heading {
     padding-bottom: 12.5rem;
   }
   header.masthead2 .heading {
-    font-size: 4.5rem;
+    font-size: 3.25rem;
     font-weight: 700;
-    line-height: 4.5rem;
-    text-align: c;
+    line-height: 3.25rem;
+    text-align: center;
     margin-bottom: 2rem;
   }
 }
@@ -10644,7 +10608,16 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .kips2 {
+  margin-bottom: 2rem;
   margin-top: -10rem;
+}
+
+.kips2 h1 {
+  display: inline-block;
+  text-transform: uppercase;
+
+  padding-bottom: 1rem;
+  margin-top: 80px;
 }
 
 .kips2 h1 {
@@ -10659,9 +10632,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 .pros h1 {
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 2px solid black;
   padding-bottom: 1rem;
   margin-top: 40px;
+}
+
+.pros a {
+  color: #DD4050;
 }
 
 .cen {
@@ -10707,4 +10683,57 @@ section#contact form#contactForm :-ms-input-placeholder {
   .info1 {
     width: 100%;
   }
+}
+
+.dropdown .btn {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.0625em;
+  margin-right: 1rem;
+  margin-bottom: -0.6rem;
+}
+
+.dropdown .btn:hover {
+  color: #DD4050;
+  transition: ease-in 0.3s;
+}
+
+.dropdown .btn:focus {
+  outline: none!important;
+}
+
+@media (max-width: 992px) {
+  .dropdown .btn {
+    margin-left: -0.7rem;
+    margin-bottom: -1px;
+  }
+}
+
+.dropdown-item {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.0625em;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #DD4050;
+  transition: ease-in 0.3s;
+}
+
+@media (min-width: 993px) {
+  .dropdown .dropdown-menu{
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown:hover .dropdown-menu{display: block;}
 }
