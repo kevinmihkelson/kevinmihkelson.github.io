@@ -10803,7 +10803,12 @@ header.masthead3 .heading {
 }
 .btn-primary {
   margin-bottom: 1rem;
-
+}
+@media (max-width: 480px) {
+  .btn-primary {
+  margin-left: 0;
+  margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
