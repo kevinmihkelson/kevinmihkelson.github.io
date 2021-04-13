@@ -10524,6 +10524,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-top: 15px;
 }
 
+#contactpage .contact-info .information a {
+  color: black;
+}
+
 #contactpage .contact-info .icon {
   width: 28px;
   margin-right: 0.7rem;
